@@ -1,0 +1,36 @@
+<div class="root">
+  <div class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <h1 class="app-name gradient-text">Kanban</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="board">
+    <div class="board-bar">
+      <p class="board-name">{{ board.nom }}</p>
+    </div>
+
+    <div class="board-wrapper">
+
+      <div class="board-sections" cdkDropListGroup>
+        <div class="section" *ngFor="let section of board.section">
+
+          <div class="section-title">
+            {{ section.nom }}
+            <button>Add</button>
+          </div>
+          <div class="carte-container" cdkDropList [cdkDropListData]="section.carte"
+            (cdkDropListDropped)="drop($event)">
+            <div class="carte" *ngFor="let item of section.carte" cdkDrag>
+              <div>{{ item }}</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
