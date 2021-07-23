@@ -10,16 +10,11 @@ import { Section } from 'src/app/models/section.model';
 })
 export class MainComponent implements OnInit {
 
-  board: Board = new Board('Test Board', [
+  board: Board = new Board('Kanban Board 1', [
     new Section('Ideas', [
       "Some random idea",
       "This is another random idea",
       "build an awesome application"
-    ]),
-    new Section('Research', [
-      "Lorem ipsum",
-      "foo",
-      "This was in the 'Research' column"
     ]),
     new Section('Todo', [
       'Get to work',

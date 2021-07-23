@@ -19,20 +19,6 @@
   display: flex;
   flex-direction: column;
 }
-.navbar {
-  background-color: #000000;
-}
-.app-name {
-  font-size: 28px;
-  font-family: "Lato";
-  font-weight: bold;
-}
-
-.gradient-text {
-  background: -webkit-linear-gradient(royalblue, #2af598);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 
 .board {
   display: flex;
@@ -42,14 +28,13 @@
   min-height: 0;
 }
 .board-bar {
-  background-color: #6969696e;
   padding-left: 15px;
 }
 .board-name {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
-  color: white;
-  font-family: sans-serif;
+  color: black;
+  font-family: "lato";
 }
 
 .board-wrapper {
@@ -82,7 +67,7 @@
 }
 
 .add-btn {
-  background-color: royalblue;
+  background-color: #2af598;
   border: none;
   color: white;
   text-align: center;
