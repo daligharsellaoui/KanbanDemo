@@ -16,11 +16,13 @@
 
       <div class="board-sections" cdkDropListGroup>
         <div class="section" *ngFor="let section of board.section">
-
-          <div class="section-title">
-            {{ section.nom }}
-            <button>Add</button>
+          <div class="section-heading">
+            <div class="section-title">
+              {{ section.nom }}
+            </div>
+            <button class="add-btn">+</button>
           </div>
+
           <div class="carte-container" cdkDropList [cdkDropListData]="section.carte"
             (cdkDropListDropped)="drop($event)">
             <div class="carte" *ngFor="let item of section.carte" cdkDrag>
